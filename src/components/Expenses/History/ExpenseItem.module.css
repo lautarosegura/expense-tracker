@@ -1,0 +1,29 @@
+.list-item {
+	background-color: #fff;
+	box-shadow: var(--box-shadow);
+	color: #333;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	padding: 10px;
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+.list-item.plus {
+	border-right: 5px solid #2ecc71;
+}
+
+.list-item.minus {
+	border-right: 5px solid #c0392b;
+}
+
+.hidden {
+	opacity: 0%;
+}
+
+.list-item:hover .hidden {
+	opacity: 100%;
+	font-weight: normal;
+	color: rgb(169, 169, 169);
+}
